@@ -12,6 +12,9 @@ Our analysis explores whether quantization, while improving energy efficiency, a
 
 ### Prerequisites
 - **Python 3**: Ensure Python 3 is installed on your system. [Download Python](https://www.python.org/downloads/)
+- Install required Python libraries by running:
+  ```bash
+  pip install -r requirements.txt
 
 ### Installation 
 1. **Set Up Power Measurement Tools**  
@@ -22,3 +25,10 @@ Our analysis explores whether quantization, while improving energy efficiency, a
    ```bash
    pip install pynvml
 
+## Running the project
+
+To run the main experiment, execute the following command from the root directory:
+   ```bash
+   python experiment-runner/examples/llm/Config.py
+   ```
+This command initiates the quantization experiments on the LLaMA3-8B model using 4-bit and 8-bit precision levels. The experiment assesses the impact of quantization on energy efficiency, accuracy, and resource utilization across various NLP tasks, including those in the GLUE and IMDB datasets.

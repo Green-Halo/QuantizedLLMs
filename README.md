@@ -33,6 +33,8 @@ To run the main experiment, execute the following command from the root director
    ```
 This command initiates the quantization experiments on the LLaMA3-8B model using 4-bit and 8-bit precision levels. The experiment assesses the impact of quantization on energy efficiency, accuracy, and resource utilization across various NLP tasks, including those in the GLUE and IMDB datasets.
 
+The results table is available at `run_table.csv`, which contains detailed experiment results for further analysis.
+
 ### Quantization
 The quantization code can be found in the `quantization` folder.
 
